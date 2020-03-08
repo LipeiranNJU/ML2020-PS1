@@ -14,10 +14,12 @@
 \newtheorem*{solution}{Solution}
 \newtheorem*{prove}{Proof}
 \usepackage{multirow}              
-
+\usepackage{graphicx}
+\usepackage{pythonhighlight}
 \setlength{\evensidemargin}{.25in}
 \setlength{\textwidth}{6in}
 \setlength{\topmargin}{-0.5in}
+\usepackage{float}
 \setlength{\topmargin}{-0.5in}
 % \setlength{\textheight}{9.5in}
 %%%%%%%%%%%%%%%%%%此处用于设置页眉页脚%%%%%%%%%%%%%%%%%%
@@ -78,10 +80,12 @@
 \section*{Problem 1}
 若数据包含噪声，则假设空间中有可能不存在与所有训练样本都一致的假设，此时的版本空间是什么？在此情形下，试设计一种归纳偏好用于假设选择。
 \begin{solution}
+\phantom{abc}
 
 根据教材定义，存在多个与所有训练样本一致时，版本空间为“与训练集一致的‘假设集合’”。
 那么存在噪声时，可以将“与训练集一致”的条件适当放宽为“与训练集大部分样例一致（如95\%）” 。不选择与最多样本一致的原因是，考虑噪声的情况下，与最多样本一致可能会涉及部分噪声点，造成过拟合。
 
+归纳偏好:减少不符合模型的样例个数和与特征和。
 
 ~\\
 ~\\
@@ -114,7 +118,60 @@
 	在Python中，数值计算通常使用Numpy, 表格数据操作通常使用Pandas, 画图可以使用Matplotlib (Seaborn), 同学们可以通过上网查找相关资料学习使用这些工具。未来同学们会接触到更多的Python扩展库，如集成了众多机器学习方法的Sklearn, 深度学习工具包Tensorflow, Pytorch等。
 \end{itemize}
 \begin{solution}
-此处用于写解答(中英文均可)	
+	\phantom{abc}
+\begin{enumerate}[ {(}1{)}]
+	\item 以下是计算部分的主体代码：
+	\begin{python}
+from matplotlib import pyplot as plt
+import pandas as pd
+
+dataset = pd.read_csv("./data.csv")
+Pre = list()
+Rec = list()
+TPR = list()
+FPR = list()
+for i in range(len(dataset)):
+	bar = dataset.loc[i, 'output']
+	dataset['Prediction'] = dataset.apply(lambda x: 1 if x['output'] >= bar else 0, axis=1)
+	dataset['Type'] = dataset.apply(lambda x: True if x['label'] == x['Prediction'] else False, axis=1)
+	dataset['TP'] = dataset.apply(lambda x: 1 if x['Type'] is True and x['Prediction'] == 1 else 0, axis=1)
+	dataset['FP'] = dataset.apply(lambda x: 1 if x['Type'] is False and x['Prediction'] == 1 else 0, axis=1)
+	dataset['TN'] = dataset.apply(lambda x: 1 if x['Type'] is True and x['Prediction'] == 0 else 0, axis=1)
+	dataset['FN'] = dataset.apply(lambda x: 1 if x['Type'] is False and x['Prediction'] == 0 else 0, axis=1)
+
+	TP = sum(dataset['TP'])
+	FP = sum(dataset['FP'])
+	TN = sum(dataset['TN'])
+	FN = sum(dataset['FN'])
+
+Pre.append(TP / (TP + FP))
+Rec.append(TP / (TP + FN))
+TPR.append(TP / (TP + FN))
+FPR.append(FP / (TN + FP))
+	\end{python}
+算法主体思路为遍历每一个可采用的阈值，将其作为分类器的标准，通过DataFrame的apply函数，高效地应用到每一个样例上，然后统计TP、FP、TN、FN。此后在绘制图时，直接使用对应公式生成横纵坐标数组，绘制折线图即可。图\ref{prcurve}为绘制的P-R曲线。
+\begin{figure}[H]
+	
+	\centering
+	
+	\includegraphics[scale=0.3]{myplot1.png}
+	
+	\caption{P-R曲线图}
+	
+\end{figure}\label{prcurve}
+	\item
+	由于计算的时候将所有可能的$TP, FP, TN, FN$都已经计算出来了，此问中利用公式$TPR=\frac{TP}{TP+FN}$与$FPR = \frac{FP}{TN+FP}$绘图即可，$AUC \approx 0.873$。图\ref{roc}为绘制的ROC曲线图，绿色部分的面积即为AUC。
+\begin{figure}[H]
+	
+	\centering
+	
+	\includegraphics[scale=0.3]{myplot2.png}
+	
+	\caption{ROC曲线图}
+	
+\end{figure}\label{roc}
+
+\end{enumerate}
 
 \end{solution}
 
@@ -125,7 +182,15 @@
 \]
 
 \begin{prove}
-此处用于写证明(中英文均可)
+\phantom{abc}
+
+我们将所有样本点按照预测值从大到小排序，则当阈值从1到0过渡的时候，这些点会依次序从左到右的落在ROC图像上。先不考虑不同类预测值相同的情形以便简化处理。
+
+曲线的起点是点$(0, 0)$，当一个新的点引入曲线时，对应的即是一次阈值的下降。那么，由TPR和FPR的定义我们知道，如果这个点是正例，则曲线端点$y$坐标上升$\frac{1}{m^+}$，如果一个点是负例，则曲线端点$x$坐标右移$\frac{1}{m^-}$，前者不增加与$x$轴围成的面积而后者增加$y\Delta x$的面积。那么我们知道，只有当增加负例的时候增加面积，而增加面积的大小取决于之前的正例数量，增加的面积大小即为$y*\Delta x = \frac{\text{TP}}{\text{TP}+\text{FN}} * \frac{1}{m^-} = \frac{\text{TP}}{m^+m^-}$,而在这个时候的TP就是之前被选到的点数，也就是依据一开始的定义，就是比现在这个负例预测值大的点数，即$\sum_{x^+\in D^+}(\mathbb{I}(f(x^+)>f(x^-))$,所以此时$\text{AUC} = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}\left(\mathbb{I}(f(x^+)>f(x^-))\right)$
+
+下面考虑不同类预测值相同的情形，但不同类的预测值相同时，加入一个新的点时，如果不会相同则如上述情况，如果与另一类点预测值相同，不妨设有$k_0$个负类，$k_1$个正类，加入这一个点后，横坐标增加了$\frac{k_0}{m^-}$，纵坐标增加了$\frac{k_1}{m^-}$，新增面积是一个梯形，且上底为$\frac{\text{TP}}{\text{TP}+\text{FN}}$，下底为$\frac{\text{TP}}{\text{TP}+\text{FN}}+\frac{k_1}{m^-}$。利用梯形面积公式我们知道，增加的面积为$\frac{\text{TP}}{m^+m^-}+\frac{k}{2(m^+m^-)}$，TP是$\sum_{x^+\in D^+}(\mathbb{I}(f(x^+)>f(x^-))$，而k便是与当前$x^-$相同正例数量，$\sum_{x^+\in D^+}(\mathbb{I}(f(x^+)=f(x^-))$，所以$
+\text{AUC} = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}\left(\mathbb{I}(f(x^+)>f(x^-))+\frac{1}{2}\mathbb{I}(f(x^+)=f(x^-))\right)
+$
 ~\\
 ~\\
 \qed
@@ -152,7 +217,29 @@ $D_5$ & 3  & 4 &  1 &  5  & 2\\
 
 使用Friedman检验$(\alpha=0.05)$判断这些算法是否性能都相同。若不相同，进行Nemenyi后续检验$(\alpha=0.05)$，并说明性能最好的算法与哪些算法有显著差别。本题需编程实现Friedman检验和Nemenyi后续检验。(预计代码行数小于50行)
 \begin{solution}
-此处用于写解答(中英文均可)
+	\phantom{abc}
+	
+	使用Friedman检验$(\alpha=0.05)$发现$\tau_{\chi^2} \approx 9.92$，$\tau_f \approx 3.94 > 3.007$，所以这些算法的性能并不相同。
+	
+	使用Nemenyi后续检验$(\alpha=0.05)$发现临界值域$CD=2.728$,经计算可得下表
+	\begin{table}[h]
+		\centering
+		\caption{算法间差别} \vspace{2mm}\label{table:ranking}
+		\begin{tabular}{c|c |c| c| c| c}\hline
+			有显著差距 & 算法$A$ & 算法$B$  & 算法$C$  &算法$D$  &算法$E$ \\
+			\hline
+			算法$A$ &   &  &   &    & \\
+			\hline
+			算法$B$ &   &  &  &    & \\
+			\hline
+			算法$C$ &   &  &   &  \checkmark  & \\
+			\hline
+			算法$D$ &   &  & \checkmark  &    & \\
+			\hline
+			算法$E$ &   &  &   &    & \\
+			\hline
+		\end{tabular}
+	\end{table}
 ~\\
 ~\\
 \end{solution}

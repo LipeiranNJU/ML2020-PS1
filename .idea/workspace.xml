@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2896cc7d-37cb-48a5-87f7-b206e5c896d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/myplot1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myplot2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.aux" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.log" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Problem4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +42,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Problem2">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lpr\Downloads\ML2020-PS1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Problem4">
     <configuration name="Problem2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ML2020-PS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Problem2" />
         <item itemvalue="Python.Problem4" />
+        <item itemvalue="Python.Problem2" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +131,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583635262841</updated>
-      <workItem from="1583635268286" duration="17305000" />
+      <workItem from="1583635268286" duration="22272000" />
+      <workItem from="1583669143316" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="some test">
       <created>1583636137629</created>
@@ -156,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583652556379</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finished Problem2.py">
+      <created>1583654856764</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583654856764</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,13 +187,14 @@
     <MESSAGE value="having done many things" />
     <MESSAGE value="Final" />
     <MESSAGE value="a little" />
-    <option name="LAST_COMMIT_MESSAGE" value="a little" />
+    <MESSAGE value="finished Problem2.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished Problem2.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583652555735">
+    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583669216462">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="628" y="150" key="CommitChangelistDialog2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583652555735" />
+    <state x="628" y="150" key="CommitChangelistDialog2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583669216462" />
     <state x="885" y="447" key="Github.ShareDialog" timestamp="1583635908898">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -182,34 +203,34 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="842" y="261" key="Github.UntrackedFilesDialog/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635842580" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1583654641720">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1583661774464">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583654641720" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1583654641720">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583661774464" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1583661774464">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.center/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583654641720" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1583654641719">
+    <state width="2005" height="305" key="GridCell.Tab.0.center/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583661774464" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1583661774464">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.left/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583654641719" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1583654641720">
+    <state width="2005" height="305" key="GridCell.Tab.0.left/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583661774464" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1583661774464">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.right/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583654641720" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583661774464" />
     <state x="526" y="198" key="SettingsEditor" timestamp="1583638778696">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="526" y="198" key="SettingsEditor/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583638778696" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583652559900">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583654861235">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583652559900" />
-    <state x="710" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583635284064">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583654861235" />
+    <state x="710" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583669144204">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="710" y="380" key="com.intellij.ide.util.TipDialog/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635284064" />
+    <state x="710" y="380" key="com.intellij.ide.util.TipDialog/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583669144204" />
     <state x="703" y="155" width="642" height="801" key="find.popup" timestamp="1583644447142">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -221,6 +242,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ML2020_PS1$Problem2.coverage" NAME="Problem2 Coverage Results" MODIFIED="1583654641715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ML2020_PS1$Problem4.coverage" NAME="Problem4 Coverage Results" MODIFIED="1583638846524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ML2020_PS1$Problem4.coverage" NAME="Problem4 Coverage Results" MODIFIED="1583669227258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
