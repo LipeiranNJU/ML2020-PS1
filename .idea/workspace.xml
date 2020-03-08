@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2896cc7d-37cb-48a5-87f7-b206e5c896d7" name="Default Changelist" comment="">
+    <list default="true" id="2896cc7d-37cb-48a5-87f7-b206e5c896d7" name="Default Changelist" comment="some test">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ML2020-PS1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML2020-PS1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.log" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS1_template.tex" beforeDir="false" afterPath="$PROJECT_DIR$/PS1_template.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +39,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Problem2">
+    <configuration name="Problem2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML2020-PS1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Problem2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Problem4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ML2020-PS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,8 +86,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="ML2020-PS1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Problem2" />
         <item itemvalue="Python.Problem4" />
       </list>
     </recent_temporary>
@@ -73,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583635262841</updated>
-      <workItem from="1583635268286" duration="1080000" />
+      <workItem from="1583635268286" duration="9859000" />
     </task>
     <task id="LOCAL-00001" summary="some test">
       <created>1583636137629</created>
@@ -82,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583636137629</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some test">
+      <created>1583636352921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583636352921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,10 +152,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="some test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583636136684">
+    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583637171730">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="628" y="150" key="CommitChangelistDialog2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583636136684" />
+    <state x="628" y="150" key="CommitChangelistDialog2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583637171730" />
     <state x="885" y="447" key="Github.ShareDialog" timestamp="1583635908898">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -105,36 +164,41 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="842" y="261" key="Github.UntrackedFilesDialog/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635842580" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1583635711023">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1583647293146">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635711023" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1583635711023">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583647293146" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1583647293146">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.center/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635711023" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1583635711022">
+    <state width="2005" height="305" key="GridCell.Tab.0.center/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583647293146" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1583647293146">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.left/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635711022" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1583635711023">
+    <state width="2005" height="305" key="GridCell.Tab.0.left/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583647293146" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1583647293146">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.right/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635711023" />
-    <state x="526" y="198" key="SettingsEditor" timestamp="1583635664234">
+    <state width="2005" height="305" key="GridCell.Tab.0.right/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583647293146" />
+    <state x="526" y="198" key="SettingsEditor" timestamp="1583638778696">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="526" y="198" key="SettingsEditor/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635664234" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583636143664">
+    <state x="526" y="198" key="SettingsEditor/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583638778696" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583637159790">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583636143664" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583637159790" />
     <state x="710" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583635284064">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="710" y="380" key="com.intellij.ide.util.TipDialog/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635284064" />
+    <state x="703" y="155" width="642" height="801" key="find.popup" timestamp="1583644447142">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="703" y="155" width="642" height="801" key="find.popup/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583644447142" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ML2020_PS1$Problem4.coverage" NAME="Problem4 Coverage Results" MODIFIED="1583635699343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ML2020_PS1$Problem2.coverage" NAME="Problem2 Coverage Results" MODIFIED="1583647293141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ML2020_PS1$Problem4.coverage" NAME="Problem4 Coverage Results" MODIFIED="1583638846524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
