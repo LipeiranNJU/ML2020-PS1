@@ -1,61 +1,41 @@
-print("TEST")
 from matplotlib import pyplot as plt
 import pandas as pd
 import numpy as np
+
 dataset = pd.read_csv("./data.csv")
-print(dataset['output'][0])
-dataset['Prediction'] = None
-dataset['Type'] = None
-P = list()
-R = list()
-TP = FP = TN = FN = 0
+print(dataset)
+Pre = list()
+Rec = list()
 for i in range(len(dataset)):
     bar = dataset.loc[i, 'output']
-    for j in range(len(dataset)):
-        if dataset['output'][j] <= bar:
-            dataset.loc[j, 'Prediction'] = 0
-            if dataset.loc[j, 'Prediction'] == dataset.loc[j, 'label']:
-                dataset.loc[j, 'Type'] = 'TN'
-                TN += 1
-            else:
-                dataset.loc[j, 'Type'] = 'FN'
-                FN += 1
-        else:
-            dataset.loc[j, 'Prediction'] = 1
-            if dataset.loc[j, 'Prediction'] == dataset.loc[j, 'label']:
-                dataset.loc[j, 'Type'] = 'TP'
-                TP += 1
-            else:
-                dataset.loc[j, 'Type'] = 'FP'
-                FP += 1
-    P.append(TP / (TP + FP))
-    R.append(TP / (TP + FN))
-    if (i + 1) % 50 == 0:
-        print("Having test " + str(i + 1) + " times.")
+    dataset['Prediction'] = dataset.apply(lambda x: 1 if x['output'] >= bar else 0, axis=1)
+    dataset['Type'] = dataset.apply(lambda x: True if x['label'] == x['Prediction'] else False, axis=1)
+    dataset['TP'] = dataset.apply(lambda x: 1 if x['Type'] is True and x['Prediction'] == 1 else 0, axis=1)
+    dataset['FP'] = dataset.apply(lambda x: 1 if x['Type'] is False and x['Prediction'] == 1 else 0, axis=1)
+    dataset['TN'] = dataset.apply(lambda x: 1 if x['Type'] is True and x['Prediction'] == 0 else 0, axis=1)
+    dataset['FN'] = dataset.apply(lambda x: 1 if x['Type'] is False and x['Prediction'] == 0 else 0, axis=1)
+
+    TP = sum(dataset['TP'])
+    FP = sum(dataset['FP'])
+    TN = sum(dataset['TN'])
+    FN = sum(dataset['FN'])
+
+    Pre.append(TP / (TP + FP))
+    Rec.append(TP / (TP + FN))
+    if i % 50 == 49:
+        print(str((i + 1) / len(dataset) * 100) + "% have tested.")
+
+Dots = list()
 
 
-plt.plot(R, P, 'k')
+def TakeRec(item):
+    return item[0]
 
-plt.title('Receiver Operating Characteristic')
-plt.plot([(0, 0), (1, 1)], 'r--')
-plt.xlim([-0.01, 1.01])
-plt.ylim([-0.01, 01.01])
-plt.ylabel('Precision')
-plt.xlabel('Recall')
+
+for dot in zip(Rec, Pre):
+    Dots.append(dot)
+Dots.sort(key=TakeRec)
+Rec = [Dots[i][0] for i in range(len(Dots))]
+Pre = [Dots[i][1] for i in range(len(Dots))]
+plt.plot(Rec, Pre)
 plt.show()
-
-
-# from sklearn.metrics import precision_recall_curve
-#
-# plt.figure("P-R Curve")
-# plt.title('Precision/Recall Curve')
-# plt.xlabel('Recall')
-# plt.ylabel('Precision')
-# y_true = np.array(dataset['label'])
-# y_scores = np.array(dataset['output'])
-# precision, recall, thresholds = precision_recall_curve(y_true, y_scores)
-# # print(precision)
-# # print(recall)
-# # print(thresholds)
-# plt.plot(recall, precision)
-# plt.show()
