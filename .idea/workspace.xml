@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2896cc7d-37cb-48a5-87f7-b206e5c896d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ML2020-PS1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS1_template.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS1_template.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS1_template.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS1_template.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS1_template.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS1_template.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,14 +73,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583635262841</updated>
-      <workItem from="1583635268286" duration="661000" />
+      <workItem from="1583635268286" duration="1080000" />
     </task>
+    <task id="LOCAL-00001" summary="some test">
+      <created>1583636137629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583636137629</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some test" />
+    <option name="LAST_COMMIT_MESSAGE" value="some test" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="628" y="150" key="CommitChangelistDialog2" timestamp="1583636136684">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="628" y="150" key="CommitChangelistDialog2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583636136684" />
     <state x="885" y="447" key="Github.ShareDialog" timestamp="1583635908898">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -125,10 +125,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="526" y="198" key="SettingsEditor/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635664234" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583635970084">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1583636143664">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583635970084" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/2560.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1583636143664" />
     <state x="710" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583635284064">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
